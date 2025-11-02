@@ -1,0 +1,27 @@
+{
+  "name": "projeto-acessibilidade-v3",
+  "version": "1.2.0",
+  "description": "Projeto acessível com GitFlow, versionamento semântico e modo escuro sincronizado",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "cleancss -o dist/css/style.min.css src/css/style.css",
+    "build:js": "terser src/js/script.js -o dist/js/script.min.js",
+    "build:html": "html-minifier --collapse-whitespace --remove-comments -o dist/index.html src/index.html",
+    "build": "npm run build:css && npm run build:js && npm run build:html",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "html-minifier-cli": "^6.1.0",
+    "terser": "^5.25.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.0",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "semantic-release": "^24.0.0"
+  },
+  "author": "Eline Santos",
+  "license": "2025"
+}

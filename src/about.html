@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Projeto Acessível</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header role="banner">
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html" accesskey="1">Início</a></li>
+        <li><a href="about.html" accesskey="2" aria-current="page">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="0">
+    <h1>Sobre o Projeto</h1>
+    <p>Este projeto foi desenvolvido para demonstrar boas práticas de acessibilidade, controle de versão e otimização web.</p>
+
+    <button id="darkModeToggle" aria-pressed="false">
+      Ativar modo escuro
+    </button>
+  </main>
+
+  <footer role="contentinfo">
+    <a href="index.html" class="voltar" aria-label="Voltar para o início">⬅ Voltar ao Início</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
